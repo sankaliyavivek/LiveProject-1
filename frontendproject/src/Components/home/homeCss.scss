@@ -1,0 +1,136 @@
+.food-menu-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  .header-icons {
+    display: flex
+  }
+
+  .fa-cart-shopping{
+    font-size: 20px;
+   
+  }
+  
+.food-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff6347;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.cart-button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.food-items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.food-item {
+  background: rgb(224, 224, 225);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+.food-item h3 {
+  margin: 0;
+}
+
+.food-item p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.food-item button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 50%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+}
+
+
+
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.cart-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-content li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cart-content button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-bar{
+  border: none;
+  border-radius: 5px !important;
+}
+}
+
+
+
+
+.food-item button:hover,
+.food-item button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+  transform: translateY(-0.25em);
+}
+
+
+.cart-content button:hover {
+  background: rgb(49, 48, 48);
+}
+
