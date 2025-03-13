@@ -2,7 +2,7 @@
   "name": "frontendproject",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sankaliyavivek.github.io/Kitchen/frontendproject",
+  "homepage": "https://sankaliyavivek.github.io/LiveProject-1/frontendproject",
   "type": "module",
   "scripts": {
     "dev": "vite",
